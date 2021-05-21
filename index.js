@@ -11,6 +11,6 @@ function redireccionar(id){
         window.location="./segundoEjercicio.html";
         break;
         case 2: 
-        window.location="./primerEjercicio.html";
+        window.location="./index.html";
     }
 }
