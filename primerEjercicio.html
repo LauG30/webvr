@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>Web vr</title>
+</head>
+<body>
+    <a-scene background="color: #9FFC63">
+        <a-assets>
+            <img id="01" src="./img/presione-aqui-alrededor-boton-rojo_275806-491.jpg">
+        </a-assets>
+        <a-sphere position="-0.8 0.4 -4.5" rotation="0 45 0" width="0.1" height="0.5" depth="0.5" color="#F7FC63" shadow></a-sphere>
+        <a-sphere position="0.5 0.5 -3.5" radius="0.5" color="red" shadow></a-sphere>
+        <a-box position="1 0.7 -2.0" radius="0.2" width="0.3" height="0.3"  color="#63FCBB" shadow></a-box>
+        <a-cone position="2 0.3 -5"  rotation="0 0 0" height="2.8"  color="#638AFC" shadow></a-cone>
+        
+        <a-box position="-1 0.5 -2.5" radius="0.5" width="0.3" rotation=" 0 35 0" color="#C063FC" shadow></a-box>
+        <a-cone position="0 0.3 -2.8 " rotation="0 0 0" color = "orange" hegith="0.8" radius-bottom="0.5"></a-cone>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4.8" height="4" color="#FC63E7" shadow></a-plane>
+        <a-plane onclick="redireccionar(1)" rotation="0 -20 0" position="0 3 -5"  color="#FCC463" src="#01"></a-plane>
+        <a-camera>
+            <a-cursor color="#000000" radius="0.5"></a-cursor>
+        </a-camera>
+    </a-scene>
+</body>
+</html>
